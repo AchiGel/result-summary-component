@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  max-height: 100vh;
+  background: #ecf2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blue-card {
+  position: relative;
+  z-index: 1;
+  max-width: 368px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 0px 32px 32px;
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+
+  box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+  padding: 24px 57px 40px;
+}
+
+.blue-card h3 {
+  color: #cac9ff;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.blue-card .point-circle {
+  background: linear-gradient(
+    180deg,
+    #4d21c9 0%,
+    rgba(37, 33, 201, 0) 100%,
+    rgba(37, 33, 201, 0) 100%
+  );
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.point-circle h2 {
+  color: #fff;
+
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 72px; /* 128.571% */
+}
+
+.point-circle h4 {
+  color: #cac9ff;
+  opacity: 0.5168;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blue-card h1 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blue-card p {
+  color: #cac9ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.white-card {
+  position: absolute;
+  z-index: 0;
+  top: 340px;
+  background-color: #fff;
+  padding: 48px 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.white-card .sum {
+  color: #303b59;
+  text-align: left;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.white-card .cards-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.cards-box .card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 124px;
+  padding: 17px;
+  justify-content: space-between;
+  border-radius: 12px;
+}
+
+.card .poin-img {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.poin-img span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card .point {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.point h5 {
+  color: #303b59;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.point span {
+  color: #303b59;
+  opacity: 0.5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-1 {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55;
+}
+
+.card-1 .poin-img span {
+  color: #f55;
+}
+.card-2 {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e;
+}
+.card-2 .poin-img span {
+  color: #ffb21e;
+}
+.card-3 {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f;
+}
+.card-3 .poin-img span {
+  color: #00bb8f;
+}
+.card-4 {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6;
+}
+.card-4 .poin-img span {
+  color: #1125d6;
+}
+
+.white-card button {
+  border-radius: 128px;
+  background: #303b59;
+  color: white;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  padding: 17px 120px;
+  cursor: pointer;
+}
+
+.white-card button:hover {
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50vh auto;
+    background-color: #fff;
+    border-radius: 32px;
+  }
+
+  .blue-card {
+    max-height: 526px;
+    padding: 38px 54px 55px 54px;
+    border-radius: 32px;
+  }
+
+  .blue-card h3 {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+
+  .blue-card .point-circle {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 28px;
+  }
+
+  .point-circle h2 {
+    font-size: 72px;
+  }
+
+  .point-circle h4 {
+    font-size: 18px;
+  }
+
+  .blue-card h1 {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+
+  .blue-card p {
+    font-size: 18px;
+  }
+
+  .white-card {
+    border-radius: 32px;
+    position: relative;
+    top: 0;
+    padding: 38px 40px 46px;
+  }
+
+  .white-card .sum {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+
+  .white-card .cards-box {
+    margin-bottom: 41px;
+  }
+
+  .cards-box .card {
+    gap: 102px;
+  }
+
+  .poin-img span {
+    font-size: 18px;
+  }
+
+  .point h5 {
+    font-size: 18px;
+  }
+
+  .point h5 span {
+    font-size: 18px;
+  }
+
+  .white-card button {
+    padding: 17px 106px;
+  }
+
+  .white-card button:hover {
+    background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+  }
+}
